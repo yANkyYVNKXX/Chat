@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GitHubPagesChat/static/css/main.43641345.chunk.css",
+    "main.js": "/GitHubPagesChat/static/js/main.0426380c.chunk.js",
+    "main.js.map": "/GitHubPagesChat/static/js/main.0426380c.chunk.js.map",
+    "runtime-main.js": "/GitHubPagesChat/static/js/runtime-main.e66a4957.js",
+    "runtime-main.js.map": "/GitHubPagesChat/static/js/runtime-main.e66a4957.js.map",
+    "static/js/2.975286fc.chunk.js": "/GitHubPagesChat/static/js/2.975286fc.chunk.js",
+    "static/js/2.975286fc.chunk.js.map": "/GitHubPagesChat/static/js/2.975286fc.chunk.js.map",
+    "index.html": "/GitHubPagesChat/index.html",
+    "static/css/main.43641345.chunk.css.map": "/GitHubPagesChat/static/css/main.43641345.chunk.css.map",
+    "static/js/2.975286fc.chunk.js.LICENSE.txt": "/GitHubPagesChat/static/js/2.975286fc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e66a4957.js",
+    "static/js/2.975286fc.chunk.js",
+    "static/css/main.43641345.chunk.css",
+    "static/js/main.0426380c.chunk.js"
+  ]
+}
