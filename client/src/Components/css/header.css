@@ -1,0 +1,53 @@
+.header {
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey ;
+    padding: 10px;
+}
+.header div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+
+.login input {
+    padding: 5px;
+    border:2px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+
+.logout {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+}
+.logout div {
+    margin: 0;
+    font-weight: 700;
+}
+
+.autorization a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.autorization a:hover {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+.autorization a:active {
+    color: black;
+}
+.autorization a:first-child::after {
+    content: '';
+    border: 1px solid #772ce8;
+    margin-left: 10px;
+}
