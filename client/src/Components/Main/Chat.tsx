@@ -14,7 +14,7 @@ const Chat = ()=>{
     const dispatch = useDispatch()
     const messages = useSelector(getChatMessages)
     useEffect(()=>{
-            socket = io("http://localhost:4000", {withCredentials:true});
+            socket = io("https://chat-onlineyanky.herokuapp.com/", {withCredentials:true});
             socket.on('messages', (data)=>{
                 console.log(data)
                 dispatch(actions.messagesAc(data))

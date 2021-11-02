@@ -90,8 +90,16 @@ export const logoutThunk =(dispatch:Dispatch<Actions>) => {
     
 }
 
-export const RegistrationThunk =(userData:valuesRegistation)=>(dispatch:Dispatch<Actions>) => {
+export const RegistrationThunk =(userData:valuesRegistation, a:any)=>(dispatch:Dispatch<Actions>) => {
     registration(userData)
-    .then((data)=>{data.responseCode === 1 ? dispatch(actions.successAc(data.message)) : dispatch(actions.errorAc(data.message))})
+    .then((data)=>{
+        if (data.responseCode === 1){
+            dispatch(actions.successAc(data.message)) 
+            a.resetForm()
+        }
+        else {
+            dispatch(actions.errorAc(data.message))
+        }
+       })
     
 }

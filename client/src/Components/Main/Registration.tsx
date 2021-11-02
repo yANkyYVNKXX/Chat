@@ -11,15 +11,15 @@ const Registration = ()=>{
 
     const auth = useSelector(getAuthReducer)
     
-    const registration = async (values:valuesRegistation)=>{
-      await dispatch(RegistrationThunk(values))
+    const registration = (values:valuesRegistation, a:any)=>{
+      dispatch(RegistrationThunk(values, a))
     }
 
     return(
         <div className='auth'>
         <div className='auth_title'>Sign up</div>
         <Formik initialValues={{login: '',password: '',repeatPassword:''}}
-        onSubmit={(values: valuesRegistation, a: any) => {registration(values).then(()=>a.resetForm())}}>
+        onSubmit={(values: valuesRegistation, a: any) => {registration(values, a)}}>
         <Form>
           <Field id="login" name="login" placeholder="login" validate={maxLength30}/>
 

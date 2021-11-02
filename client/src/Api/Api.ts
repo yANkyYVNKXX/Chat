@@ -19,7 +19,7 @@ export type loginType = {
 
 const instance = axios.create({
     withCredentials: true,
-    baseURL: 'http://localhost:4000/',
+    baseURL: 'https://chat-onlineyanky.herokuapp.com/',
   });
 
 export const authMe = () => instance.get<auth>('auth/me').then( data => data.data)
